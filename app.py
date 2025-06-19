@@ -378,7 +378,7 @@ else:
     for measurement_idx in range(num_measurements):
         for screen_idx in range(num_screens):
             fig.update_xaxes(
-                title_text="Concentration",
+                title_text="Concentration (uM)",
                 tickmode='array',
                 tickvals=list(range(len(all_concentrations))),
                 ticktext=concentration_labels,
