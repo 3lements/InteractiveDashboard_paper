@@ -259,7 +259,7 @@ if pool_screens:
     # Update x-axis for all rows
     for measurement_idx in range(num_measurements):
         fig.update_xaxes(
-            title_text="Concentration",
+            title_text="Concentration (uM)",
             tickmode='array',
             tickvals=list(range(len(all_concentrations))),
             ticktext=concentration_labels,
@@ -331,7 +331,7 @@ else:
                             showlegend=show_in_legend,
                             customdata=conc_labels,
                             hovertemplate='<b>%{fullData.name}</b><br>' +
-                                        'Concentration: %{customdata}<br>' +
+                                        'Concentration: %{customdata} uM<br>' +
                                         '% Change: %{y:.2f}<br>' +
                                         'SEM: %{error_y.array:.2f}<br>' +
                                         '<extra></extra>'
